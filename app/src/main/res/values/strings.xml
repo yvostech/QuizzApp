@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Quizz App</string>
+    <string name="title">What do you know about animals?</string>
+    <string name="question_1">What kind of animal is the largest living creature on Earth?</string>
+    <string name="question_1_hint">Animal</string>
+
+    <string name="question_2">Which is the largest species of the tiger?</string>
+    <string name="answer2">Siberian Tiger</string>
+    <string name="q2_answ_1">Bengal Tiger</string>
+    <string name="q2_answ_2">Siberian Tiger</string>
+    <string name="q2_answ_3">South China Tiger</string>
+
+    <string name="question_3">What is the only continent on earth where Giraffes live in the wild?</string>
+    <string name="answer3">Africa</string>
+    <string name="q3_answ_1">Africa</string>
+    <string name="q3_answ_2">Asia</string>
+    <string name="q3_answ_3">Australia</string>
+
+    <string name="question_4">Which animals are mammals?</string>
+    <string name="q4_answ1">Yak</string>
+    <string name="q4_answ2">Parrot</string>
+    <string name="q4_answ3">Okapi</string>
+    <string name="q4_answ4">Sardines</string>
+
+    <string name="button">Submit</string>
+</resources>
