@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
             points = 0;
             setContentView(R.layout.activity_main);
         }else {
-            // Check if text is ok
+            // Check if all questions have an answer
             EditText text = (EditText)findViewById(R.id.animal_name);
             String animal = (String) text.getText().toString();
             if(animal.isEmpty()) {
@@ -39,15 +39,8 @@ public class MainActivity extends AppCompatActivity {
                 toast.show();
                 return;
             }
-            animal = animal.toLowerCase();
-            if(animal.equals("whale")) {
-                points++;
-                TextView tic = (TextView)findViewById(R.id.tic0);
-                tic.setVisibility(View.VISIBLE);
-            }
 
-            // Check radio buttons for question 2 and if answer is right
-            // Get right answer
+            // Check radio buttons for question 2
             TextView viewAnswer = (TextView) findViewById(R.id.answer_textview_2);
             String rightAnswer = viewAnswer.getText().toString();
             // Is the button now checked?
@@ -57,17 +50,8 @@ public class MainActivity extends AppCompatActivity {
                 toast.show();
                 return;
             }
-            int radioBtnId = radiogroup1.getCheckedRadioButtonId();
-            RadioButton btnChecked = (RadioButton)radiogroup1.findViewById(radioBtnId);
-            String selectedText = btnChecked.getText().toString();
-            if(rightAnswer.equals(selectedText)) {
-                points++;
-                TextView tic1 = (TextView)findViewById(R.id.tic1);
-                tic1.setVisibility(View.VISIBLE);
-            }
 
             // Check radio buttons for question 3 and if answer is right
-            // Get right answer
             TextView viewAnswer2 = (TextView) findViewById(R.id.answer_textview_3);
             String rightAnswer2 = viewAnswer2.getText().toString();
             // Is the button now checked?
@@ -76,14 +60,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast toast = Toast.makeText(getApplicationContext(), "You must answer all questions!", Toast.LENGTH_SHORT);
                 toast.show();
                 return;
-            }
-            int radioBtnId2 = radiogroup2.getCheckedRadioButtonId();
-            RadioButton btnChecked2 = (RadioButton)radiogroup2.findViewById(radioBtnId2);
-            String selectedText2 = btnChecked2.getText().toString();
-            if(rightAnswer2.equals(selectedText2)) {
-                points++;
-                TextView tic2 = (TextView)findViewById(R.id.tic2);
-                tic2.setVisibility(View.VISIBLE);
             }
 
             // Which checkboxes are checked
@@ -100,7 +76,40 @@ public class MainActivity extends AppCompatActivity {
                 Toast toast = Toast.makeText(getApplicationContext(), "You must answer all questions!", Toast.LENGTH_SHORT);
                 toast.show();
                 return;
-            }else if(checkboxChecked1 && checkboxChecked3) {
+            }
+
+
+            // Question 1. Check if text is ok
+            animal = animal.toLowerCase();
+            if(animal.equals("whale")) {
+                points++;
+                TextView tic = (TextView)findViewById(R.id.tic0);
+                tic.setVisibility(View.VISIBLE);
+            }
+
+            // Question 2. Get right answer
+            int radioBtnId = radiogroup1.getCheckedRadioButtonId();
+            RadioButton btnChecked = (RadioButton)radiogroup1.findViewById(radioBtnId);
+            String selectedText = btnChecked.getText().toString();
+            if(rightAnswer.equals(selectedText)) {
+                points++;
+                TextView tic1 = (TextView)findViewById(R.id.tic1);
+                tic1.setVisibility(View.VISIBLE);
+            }
+
+            // Question 3. Get right answer
+            int radioBtnId2 = radiogroup2.getCheckedRadioButtonId();
+            RadioButton btnChecked2 = (RadioButton)radiogroup2.findViewById(radioBtnId2);
+            String selectedText2 = btnChecked2.getText().toString();
+            if(rightAnswer2.equals(selectedText2)) {
+                points++;
+                TextView tic2 = (TextView)findViewById(R.id.tic2);
+                tic2.setVisibility(View.VISIBLE);
+            }
+
+
+            // Question 4. Check answer
+            if(checkboxChecked1 && checkboxChecked3 && !checkboxChecked2 && !checkboxChecked4) {
                 points++;
                 TextView tic3 = (TextView)findViewById(R.id.tic3);
                 tic3.setVisibility(View.VISIBLE);
