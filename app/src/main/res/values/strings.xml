@@ -22,5 +22,6 @@
     <string name="q4_answ3">Okapi</string>
     <string name="q4_answ4">Sardines</string>
 
+    <string name="tic">\u2713</string>
     <string name="button">Submit</string>
 </resources>
