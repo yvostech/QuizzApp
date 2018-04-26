@@ -1,27 +1,29 @@
 <resources>
     <string name="app_name">Quizz App</string>
     <string name="title">What do you know about animals?</string>
-    <string name="question_1">What kind of animal is the largest living creature on Earth?</string>
-    <string name="question_1_hint">Animal</string>
+    <string name="text_view_largest_animal">What kind of animal is the largest living creature on Earth?</string>
+    <string name="hint_largest_animal">Animal</string>
 
-    <string name="question_2">Which is the largest species of the tiger?</string>
-    <string name="answer2">Siberian Tiger</string>
-    <string name="q2_answ_1">Bengal Tiger</string>
-    <string name="q2_answ_2">Siberian Tiger</string>
-    <string name="q2_answ_3">South China Tiger</string>
+    <string name="text_view_tiger_species">Which is the largest species of the tiger?</string>
+    <string name="text_view_species_siberian">Siberian Tiger</string>
+    <string name="radio_species_bengal">Bengal Tiger</string>
+    <string name="radio_species_siberian">Siberian Tiger</string>
+    <string name="radio_species_china">South China Tiger</string>
 
-    <string name="question_3">What is the only continent on earth where Giraffes live in the wild?</string>
-    <string name="answer3">Africa</string>
-    <string name="q3_answ_1">Africa</string>
-    <string name="q3_answ_2">Asia</string>
-    <string name="q3_answ_3">Australia</string>
+    <string name="text_view_giraffes">What is the only continent on earth where Giraffes live in the wild?</string>
+    <string name="text_view_giraffes_africa">Africa</string>
+    <string name="radio_giraffes_africa">Africa</string>
+    <string name="radio_giraffes_asia">Asia</string>
+    <string name="radio_giraffes_australia">Australia</string>
 
-    <string name="question_4">Which animals are mammals?</string>
-    <string name="q4_answ1">Yak</string>
-    <string name="q4_answ2">Parrot</string>
-    <string name="q4_answ3">Okapi</string>
-    <string name="q4_answ4">Sardines</string>
+    <string name="text_view_mammals">Which animals are mammals?</string>
+    <string name="checkbox_mammals_yak">Yak</string>
+    <string name="checkbox_mammals_parrot">Parrot</string>
+    <string name="checkbox_mammals_okapi">Okapi</string>
+    <string name="checkbox_mammals_sardines">Sardines</string>
 
     <string name="tic">\u2713</string>
-    <string name="button">Submit</string>
+    <string name="submit">Submit</string>
+    <string name="restart">Restart</string>
+    <string name="try_again">Try again</string>
 </resources>

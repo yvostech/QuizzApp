@@ -7,7 +7,7 @@
 
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context="com.udacity.myapplication.MainActivity">
 
@@ -16,18 +16,18 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:text="@string/title"
-        android:textSize="32sp"
-        android:padding="20dp"
+        android:textSize="@dimen/text_size_large"
+        android:padding="@dimen/title_padding"
         android:background="@color/colorAccent"/>
 
     <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="16dp">
+    android:padding="@dimen/section_padding">
 
     <LinearLayout
-        android:layout_width="0dp"
+        android:layout_width="@dimen/none"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_weight="2">
@@ -35,26 +35,27 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/question_1"
-            android:textSize="16sp" />
+            android:text="@string/text_view_largest_animal"
+            android:textSize="@dimen/text_size" />
 
         <EditText
             android:id="@+id/animal_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/question_1_hint" />
+            android:inputType="text"
+            android:hint="@string/hint_largest_animal" />
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/tic0"
-        android:layout_width="0dp"
+        android:id="@+id/tic_animal"
+        android:layout_width="@dimen/none"
         android:layout_height="match_parent"
         android:gravity="center_vertical|end"
         android:layout_weight="1"
         android:text="@string/tic"
         android:textColor="@color/colorGreen"
-        android:textSize="32sp"
+        android:textSize="@dimen/text_size_large"
         android:visibility="invisible" />
     </LinearLayout>
 
@@ -62,10 +63,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="16dp">
+        android:padding="@dimen/section_padding">
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="@dimen/none"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="2">
@@ -73,48 +74,48 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/question_2"
-                android:textSize="16sp" />
+                android:text="@string/text_view_tiger_species"
+                android:textSize="@dimen/text_size" />
 
             <RadioGroup
-                android:id="@+id/radiogroup1"
+                android:id="@+id/radiogroup_species"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/answer_textview_2"
+                    android:id="@+id/text_view_species_answer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/answer2"
+                    android:text="@string/text_view_species_siberian"
                     android:visibility="gone"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q2_answ_1"/>
+                    android:text="@string/radio_species_bengal"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q2_answ_2"/>
+                    android:text="@string/radio_species_siberian"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q2_answ_3"/>
+                    android:text="@string/radio_species_china"/>
             </RadioGroup>
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/tic1"
-            android:layout_width="0dp"
+            android:id="@+id/tic_species"
+            android:layout_width="@dimen/none"
             android:layout_height="match_parent"
             android:gravity="center_vertical|end"
             android:layout_weight="1"
             android:text="@string/tic"
             android:textColor="@color/colorGreen"
-            android:textSize="32sp"
+            android:textSize="@dimen/text_size_large"
             android:visibility="invisible" />
     </LinearLayout>
 
@@ -122,10 +123,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="16dp">
+        android:padding="@dimen/section_padding">
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="@dimen/none"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="2">
@@ -133,48 +134,48 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/question_3"
-                android:textSize="16sp" />
+                android:text="@string/text_view_giraffes"
+                android:textSize="@dimen/text_size" />
 
             <RadioGroup
-                android:id="@+id/radiogroup2"
+                android:id="@+id/radiogroup_giraffes"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/answer_textview_3"
+                    android:id="@+id/text_view_giraffes_answer"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/answer3"
+                    android:text="@string/text_view_giraffes_africa"
                     android:visibility="gone"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q3_answ_1"/>
+                    android:text="@string/radio_giraffes_africa"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q3_answ_2"/>
+                    android:text="@string/radio_giraffes_asia"/>
 
                 <RadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/q3_answ_3"/>
+                    android:text="@string/radio_giraffes_australia"/>
             </RadioGroup>
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/tic2"
-            android:layout_width="0dp"
+            android:id="@+id/tic_giraffes"
+            android:layout_width="@dimen/none"
             android:layout_height="match_parent"
             android:gravity="center_vertical|end"
             android:layout_weight="1"
             android:text="@string/tic"
             android:textColor="@color/colorGreen"
-            android:textSize="32sp"
+            android:textSize="@dimen/text_size_large"
             android:visibility="invisible" />
     </LinearLayout>
 
@@ -184,10 +185,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="16dp">
+        android:padding="@dimen/section_padding">
 
         <LinearLayout
-            android:layout_width="0dp"
+            android:layout_width="@dimen/none"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="2">
@@ -195,44 +196,44 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/question_4"
-                android:textSize="16sp" />
+                android:text="@string/text_view_mammals"
+                android:textSize="@dimen/text_size" />
 
             <CheckBox
-                android:id="@+id/cbox1"
+                android:id="@+id/checbox_yak"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/q4_answ1"/>
+                android:text="@string/checkbox_mammals_yak"/>
 
             <CheckBox
-                android:id="@+id/cbox2"
+                android:id="@+id/checkbox_parrot"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/q4_answ2"/>
+                android:text="@string/checkbox_mammals_parrot"/>
 
             <CheckBox
-                android:id="@+id/cbox3"
+                android:id="@+id/checkbox_okapi"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/q4_answ3"/>
+                android:text="@string/checkbox_mammals_okapi"/>
 
             <CheckBox
-                android:id="@+id/cbox4"
+                android:id="@+id/checkbox_sardines"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/q4_answ4"/>
+                android:text="@string/checkbox_mammals_sardines"/>
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/tic3"
-            android:layout_width="0dp"
+            android:id="@+id/tic_mammals"
+            android:layout_width="@dimen/none"
             android:layout_height="match_parent"
             android:gravity="center_vertical|end"
             android:layout_weight="1"
             android:text="@string/tic"
             android:textColor="@color/colorGreen"
-            android:textSize="32sp"
+            android:textSize="@dimen/text_size_large"
             android:visibility="invisible" />
     </LinearLayout>
 
@@ -240,9 +241,9 @@
         android:id="@+id/submit_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="26dp"
+        android:layout_marginBottom="@dimen/margin_bottom"
         android:layout_gravity="center_horizontal"
-        android:text="@string/button"
+        android:text="@string/submit"
         android:onClick="checkAnswers"/>
 </LinearLayout>
 </ScrollView>
